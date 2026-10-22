@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>栖野商店 · 经营看板</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <aside class="sidebar" aria-label="看板信息">
+    <a class="brand" href="./index.html"><span class="brand-mark">栖</span><span>栖野商店<small>QIYE / DAILY GOODS</small></span></a>
+    <div class="sidebar-label">工作空间 / WORKSPACE</div>
+    <a class="nav-active" href="#main" aria-current="page"><span aria-hidden="true">▦</span> 经营概览 <span class="nav-dot"></span></a>
+    <div class="sidebar-note"><span class="note-icon" aria-hidden="true">↗</span><h2>让好生意，<br>自然生长。</h2><p>看见每一次变化，<br>把握每一天的经营。</p><span class="note-line"></span><small>GROW AT YOUR OWN PACE</small></div>
+    <div class="store-profile"><span class="avatar">栖</span><div>栖野生活旗舰店<small><span class="status-dot"></span> 演示工作空间</small></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span class="breadcrumb">工作空间 <span>/</span> <strong>经营概览</strong></span><button id="theme-toggle" class="icon-button" type="button" aria-label="切换到深色主题" aria-pressed="false"></button></header>
+    <main id="main">
+      <div class="page-heading"><div><p class="eyebrow">THE EVERYDAY OVERVIEW</p><h1>经营有数，生长有序<span>。</span></h1><p class="subtitle">你好，店主。这里是你的商店经营快照。</p></div><span class="demo-badge"><span class="status-dot"></span> 示例数据 · 非实时</span></div>
+      <div class="toolbar"><div><h2>经营概览</h2><p id="date-label"></p></div><div class="toolbar-actions"><div class="period-control" role="group" aria-label="选择统计周期"><button type="button" data-period="week" aria-pressed="true">近 7 天</button><button type="button" data-period="month" aria-pressed="false">近 30 天</button></div><button type="button" class="export-button" id="export">导出数据 <span aria-hidden="true">↗</span></button></div></div>
+      <div id="dashboard" class="dashboard" aria-label="经营数据卡片"></div>
+      <footer><span><span class="status-dot"></span> 数据仅供课程演示 · 金额单位：人民币</span><span>栖野 / 每一天，都在生长</span></footer>
+      <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+    </main>
+  </div>
+</body>
+</html>
